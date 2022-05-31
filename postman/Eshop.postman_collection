@@ -1,0 +1,532 @@
+{
+	"info": {
+		"_postman_id": "7f0a421f-7419-4a99-96ac-e720b69b31ed",
+		"name": "Orderflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Velma Hayek\",\r\n    \"email\":\"velmaH@gmail.com\",\r\n    \"password\":\"\",\r\n    \"passwordConfirmation\":\"\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "create sessions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"emodatt08@gmail.com\",\r\n    \"password\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/sessions"
+			},
+			"response": []
+		},
+		{
+			"name": "get sessions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjBmNjM2YjI5Mjc1NjM0MTRlZGY3ZDgiLCJpYXQiOjE2NDUxNzU2NTl9.Z9XRa5hABiKecTLOjU6b8UXXigPuCWmCeU6wToWCJd4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:2227/api/sessions"
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjBmNjM2YjI5Mjc1NjM0MTRlZGY3ZDgiLCJpYXQiOjE2NDUxNzU2NTl9.Z9XRa5hABiKecTLOjU6b8UXXigPuCWmCeU6wToWCJd4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:2227/api/users/62022c82f422a3a4c4095085"
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjBmNjM2YjI5Mjc1NjM0MTRlZGY3ZDgiLCJpYXQiOjE2NDUxNzU2NTl9.Z9XRa5hABiKecTLOjU6b8UXXigPuCWmCeU6wToWCJd4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"velmaa\",\r\n    \"email\":\"vv@gmail.com\",\r\n    \"role\":\"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/users/62863164cbefef49639b893c"
+			},
+			"response": []
+		},
+		{
+			"name": "get All users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjBmNjM2YjI5Mjc1NjM0MTRlZGY3ZDgiLCJpYXQiOjE2NDUxNzU2NTl9.Z9XRa5hABiKecTLOjU6b8UXXigPuCWmCeU6wToWCJd4",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:2227/api/users"
+			},
+			"response": []
+		},
+		{
+			"name": "add products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Gamma Radius 2\",\r\n    \"description\": \"AOT manga from the inception\",\r\n    \"price\": 25000,\r\n    \"image\":\"https://baylorlariat.com/wp-content/uploads/2022/04/attack-on-titan.jpeg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "add order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n        \"quantity\" : 2,\r\n        \"total_price\": 7050,\r\n        \"delivery_location\" :\"Accra, Ghana\",\r\n        \"delivery_date\": \"2022-04-23\",\r\n        \"longitude\": \"5.6037\",\r\n        \"latitude\":\"0.1870\",\r\n        \"productIds\":[\"62815250eab3fc45f27298cd\",\"625101f6578e48f7c6c26854\" ]\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/order"
+			},
+			"response": []
+		},
+		{
+			"name": "update products",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"9 piece dildo\",\r\n    \"description\": \"Some of the best dildos in the world\",\r\n    \"price\": 2000,\r\n    \"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Dildo.png/800px-Dildo.png\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/products/LsdrtkAK9oV1vviTWgQO"
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/products/LsdrtkAK9oV1vviTWgQO"
+			},
+			"response": []
+		},
+		{
+			"name": "get order",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/order/rNLbBru7YYZ1uICp7FfO"
+			},
+			"response": []
+		},
+		{
+			"name": "get product Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/products/image/LsdrtkAK9oV1vviTWgQO"
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInJvbGUiOiJhZG1pbiIsInNlc3Npb24iOiI2MjdiZGE0YWM3ZDE3NjU3MTRkNTYzMTMiLCJpYXQiOjE2NTIyODM5Nzh9.5IbyPTeuXiMHc_FM-DC_3LITG592ZG2lus3o-DIlC78",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2227/api/products?page=3&limit=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2227",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2227/api/orders?page=1&limit=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2227",
+					"path": [
+						"api",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get payments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2227/api/all/payments?page=1&limit=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2227",
+					"path": [
+						"api",
+						"all",
+						"payments"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add image to product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Ripper/OneDrive/Pictures/sextPanther/1.png"
+						}
+					]
+				},
+				"url": "http://localhost:2227/api/products/upload/4KvKIfQNl1hNU42seyyR"
+			},
+			"response": []
+		},
+		{
+			"name": "fulfil an order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/fulfil/order/rNLbBru7YYZ1uICp7FfO"
+			},
+			"response": []
+		},
+		{
+			"name": "make payment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"card_type\":\"visa\",\r\n    \"card_number\":\"4242424242424242\",\r\n    \"exp_month\":\"12\",\r\n    \"exp_year\":2024,\r\n    \"cvv\":\"424\",\r\n    \"total_price\":200,\r\n    \"currency\":\"usd\",\r\n    \"source\":\"tok_amex\",\r\n    \"description\":\"Payment for goods\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/make/payment/rNLbBru7YYZ1uICp7FfO"
+			},
+			"response": []
+		},
+		{
+			"name": "decline an order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInNlc3Npb24iOiI2MjRmZDY5MGJhNzljY2M0MzIwYzQ4NjEiLCJpYXQiOjE2NDkzOTk0NDB9.RzNal-A2x0B0JaUPR4-KcrxQxVZ8wMTxJdkncqRx_UU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"declineMessage\":\"Items have not been sourced yet, sorry for the incovenience\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:2227/api/decline/order/qljYT58ZInDTlAqG1WuW"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjAyMmM4MmY0MjJhM2E0YzQwOTUwODUiLCJlbWFpbCI6ImVtb2RhdHQwOEBnbWFpbC5jb20iLCJuYW1lIjoic2FkYXQiLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTA4VDA4OjQwOjM0LjMzOVoiLCJfX3YiOjAsInJvbGUiOiJhZG1pbiIsInNlc3Npb24iOiI2MjdiYzg4NmM3ZDE3NjU3MTRkNTYyZWQiLCJpYXQiOjE2NTIyNzk0MzB9.ufagQUrt3khOBwXBQ7tyeIoo0Kz5wI1MHN3SDZ-cRGo",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:2227/api/sessions"
+			},
+			"response": []
+		}
+	]
+}

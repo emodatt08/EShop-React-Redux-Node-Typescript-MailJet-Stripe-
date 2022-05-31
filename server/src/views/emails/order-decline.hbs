@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Order Declined</title>
+  </head>
+  <body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h1>Order Declined</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Dear {{ order.user.name }},
+                    </p>
+                    <p>
+                        Your order has been cancelled.
+                    </p>
+                     <p>
+                       <h4>Reason:</h4> <h3><b>{{ order.declineMessage }}</b></h3>
+                    </p>
+                    <p>
+                        Order Number: {{ order.orderNo }}
+                    </p>
+                    <p>
+                        Order Total: {{ order.total_price }}
+                    </p>
+                    <p>
+                        Order Date: {{ order.createdAt }}
+                    </p>
+                    <p>
+                        Order Items:
+                    </p>
+                    <ul>
+                        {{#each order.productIds}}
+                            <li>
+                                {{ title }} x {{ quantity }}
+                            </li>
+                       {{/each}}
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>

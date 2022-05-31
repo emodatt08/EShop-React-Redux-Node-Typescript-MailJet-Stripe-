@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Order Fulfilment</title>
+  </head>
+  <body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <h1>Order Fulfilment</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Hi {{ order.user.name }},
+                    </p>
+                    <p>
+                        Your order has been fulfilled.
+                    </p>
+                    <p>
+                        Order Number: {{ order.orderNo }}
+                    </p>
+                    <p>
+                        Order Total: {{ order.total_price }}
+                    </p>
+                    <p>
+                        Order Date: {{ order.createdAt }}
+                    </p>
+                    <p>
+                        Order Items:
+                    </p>
+                    <ul>
+                        {{#each order.productIds}}
+                            <li>
+                                {{ title }} x {{ quantity }}
+                            </li>
+                       {{/each}}
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>
