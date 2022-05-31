@@ -1,4 +1,4 @@
-# EShop(React/Redux(RTK)/Node/Typescript/Mailjet/Stripe)
+# EShop(React/Redux/Node/Typescript/Mailjet/Stripe)
 This project contains a full service API, a client app and an admin app
 
 ## Features For react front-end
