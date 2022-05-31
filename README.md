@@ -96,6 +96,7 @@ If you happen to have issues after installing try to
 
 <h6> Admin declines order with reason and Declinement email sent with reason </h6>
 ![](screenshots/declineorder.png)
+
 ![](screenshots/decline_email.png)
 
 <h6> Admin sees users</h6>
