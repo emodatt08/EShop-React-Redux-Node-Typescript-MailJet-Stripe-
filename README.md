@@ -62,8 +62,7 @@ If you happen to have issues after installing try to
 - Install dependencies with npm
 - Modify permissions for the servers upload  directory
 ```
-
-
+```
 <h2 id="screenshots">Admin Screenshots</h2>
 
 <h6> Admin login page </h6>
