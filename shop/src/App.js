@@ -11,19 +11,23 @@ import Categories from './components/Categories/Categories';
 import Products from './components/Products/Products';
 import Newsletter from './components/partials/Newsletter';
 import Footer from './components/partials/Footer';
+import ProductList from './components/Products/ProductList';
+import Product from './components/Products/Product';
+import Register from './components/Auth/Register';
+import Login from './components/Auth/Login';
 function App() {
   return (
     <div className="App">
-      <Announcements />
+      {/* <Announcements />
       <Header />
       <Slider />
       <Categories />
       <Products />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
       <Router>
         <Routes>
-            {/* <Route  path="/"  element={<Products/>} /> */}
+            <Route  path="/"  element={<Login/>} />
           
             <Route>404 Not Found!</Route>
         </Routes>
