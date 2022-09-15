@@ -15,6 +15,7 @@ import ProductList from './components/Products/ProductList';
 import Product from './components/Products/Product';
 import Register from './components/Auth/Register';
 import Login from './components/Auth/Login';
+import Cart from './components/Cart/Cart';
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,7 @@ function App() {
       <Footer /> */}
       <Router>
         <Routes>
-            <Route  path="/"  element={<Login/>} />
+            <Route  path="/"  element={<Cart/>} />
           
             <Route>404 Not Found!</Route>
         </Routes>
