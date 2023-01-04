@@ -4,11 +4,13 @@ import styled from 'styled-components';
 import Announcements from '../partials/Announcements';
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
+import { mobile } from '../partials/Responsive';
 
 
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobile({ padding: "10px" })}
 `;
 const Title = styled.h1`
   font-weight: 300;
@@ -39,11 +41,13 @@ const TopTexts = styled.div`
 
 const TopText = styled.span`
   margin: 0px 10px;
+  ${mobile({ display: "none" })}
 `
 
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Info = styled.div`
@@ -56,6 +60,7 @@ const Summary = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const ProductDetail = styled.div`

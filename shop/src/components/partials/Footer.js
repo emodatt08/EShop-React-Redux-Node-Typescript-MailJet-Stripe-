@@ -1,9 +1,11 @@
 import { Facebook, Instagram, LinkedIn, MailOutline, Phone, Room, Twitter } from '@mui/icons-material';
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from './Responsive';
 
 const Container = styled.div`
     display: flex;
+    ${mobile({ flexDirection: "column" })}
 `;
 
 const Left = styled.div`
@@ -39,6 +41,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({ display: "none" })}
 `;
 
 
@@ -62,18 +65,21 @@ const ListItem = styled.li`
 const Right = styled.div`
     flex: 1;
     padding: 20px;
+    ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem = styled.div`
     margin-bottom: 20px;
     display: flex;
     margin-left: 43%;
+    ${mobile({ marginLeft: "0" })}
     align-items: center;  
 `;
 
 const Payment = styled.img`
     width: 50%;
     margin-left: 38%;
+    ${mobile({ marginLeft: "0" })}
 `;
 
 

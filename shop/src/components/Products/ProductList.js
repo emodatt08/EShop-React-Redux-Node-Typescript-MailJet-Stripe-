@@ -4,6 +4,7 @@ import Announcements from '../partials/Announcements';
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
 import Newsletter from '../partials/Newsletter';
+import { mobile } from '../partials/Responsive';
 import Products from './Products';
 
 const Container = styled.div``;
@@ -19,6 +20,7 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
   margin: 20px;
+  ${mobile({ width: "0px 20px", display: "flex", flexDirection: "column" })}
 `;
 
 const FilterText = styled.span`
@@ -30,6 +32,7 @@ const FilterText = styled.span`
 const Select = styled.select`
     padding: 10px;
     margin-right: 20px;
+    ${mobile({ margin: "10px 0px" })}
 `
 
 const Option = styled.option`

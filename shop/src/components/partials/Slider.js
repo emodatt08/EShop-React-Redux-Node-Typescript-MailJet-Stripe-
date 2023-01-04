@@ -2,13 +2,15 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {ArrowLeftOutlined, ArrowRightOutlined} from '@mui/icons-material';
 import { sliderItems } from '../../data/data';
+import { mobile } from './Responsive';
 
 const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-
     position: relative;
+    overflow: hidden;
+    ${mobile({ display: "none" })}
     margin-top:25px;
 `
 
@@ -21,10 +23,10 @@ const Arrow = styled.div`
     align-items: center;
     justify-content: center;
     position: absolute;
-    left:  ${props => props.direction === "left" && "10px" };
-    right: ${props => props.direction === "right" && "10px"};
     top: 0;
     bottom: 0;
+    left:  ${props => props.direction === "left" && "10px" };
+    right: ${props => props.direction === "right" && "10px"};
     margin: auto;
     opacity: 0.5;
     z-index: 2;
